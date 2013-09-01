@@ -18,6 +18,13 @@
 		8117378517D325A30060F0AC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8117378417D325A30060F0AC /* Default-568h@2x.png */; };
 		8117378817D325A30060F0AC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8117378617D325A30060F0AC /* MainStoryboard.storyboard */; };
 		8117378B17D325A30060F0AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8117378A17D325A30060F0AC /* ViewController.m */; };
+		81E4338417D32DB400150467 /* FollowedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E4338317D32DB400150467 /* FollowedCell.m */; };
+		81E4338817D32F0200150467 /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E4338717D32F0200150467 /* AccountsViewController.m */; };
+		81E4338A17D352EE00150467 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E4338917D352EE00150467 /* Accounts.framework */; };
+		81E4338C17D352F900150467 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E4338B17D352F900150467 /* Social.framework */; };
+		81E4339217D35C2F00150467 /* TrackData.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E4338E17D3537400150467 /* TrackData.m */; };
+		81E4339317D35C2F00150467 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E4339017D353D700150467 /* Account.m */; };
+		81E4339617D3688D00150467 /* AccountDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E4339517D3688D00150467 /* AccountDetail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +44,18 @@
 		8117378717D325A30060F0AC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		8117378917D325A30060F0AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8117378A17D325A30060F0AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		81E4338217D32DB400150467 /* FollowedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowedCell.h; sourceTree = "<group>"; };
+		81E4338317D32DB400150467 /* FollowedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowedCell.m; sourceTree = "<group>"; };
+		81E4338617D32F0200150467 /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
+		81E4338717D32F0200150467 /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
+		81E4338917D352EE00150467 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		81E4338B17D352F900150467 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		81E4338D17D3537400150467 /* TrackData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackData.h; sourceTree = "<group>"; };
+		81E4338E17D3537400150467 /* TrackData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackData.m; sourceTree = "<group>"; };
+		81E4338F17D353D700150467 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		81E4339017D353D700150467 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		81E4339417D3688D00150467 /* AccountDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDetail.h; sourceTree = "<group>"; };
+		81E4339517D3688D00150467 /* AccountDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E4338C17D352F900150467 /* Social.framework in Frameworks */,
+				81E4338A17D352EE00150467 /* Accounts.framework in Frameworks */,
 				8117376F17D325A30060F0AC /* UIKit.framework in Frameworks */,
 				8117377117D325A30060F0AC /* Foundation.framework in Frameworks */,
 				8117377317D325A30060F0AC /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +77,8 @@
 		8117376217D325A20060F0AC = {
 			isa = PBXGroup;
 			children = (
+				81E4338B17D352F900150467 /* Social.framework */,
+				81E4338917D352EE00150467 /* Accounts.framework */,
 				8117377417D325A30060F0AC /* TwitterAssignment */,
 				8117376D17D325A30060F0AC /* Frameworks */,
 				8117376C17D325A30060F0AC /* Products */,
@@ -83,9 +106,12 @@
 		8117377417D325A30060F0AC /* TwitterAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				81E4339117D353FF00150467 /* Data */,
+				81E4338617D32F0200150467 /* AccountsViewController.h */,
+				81E4338717D32F0200150467 /* AccountsViewController.m */,
 				8117377D17D325A30060F0AC /* AppDelegate.h */,
 				8117377E17D325A30060F0AC /* AppDelegate.m */,
-				8117378617D325A30060F0AC /* MainStoryboard.storyboard */,
+				81E4338517D32DBE00150467 /* Interface */,
 				8117378917D325A30060F0AC /* ViewController.h */,
 				8117378A17D325A30060F0AC /* ViewController.m */,
 				8117377517D325A30060F0AC /* Supporting Files */,
@@ -105,6 +131,29 @@
 				8117378417D325A30060F0AC /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81E4338517D32DBE00150467 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				8117378617D325A30060F0AC /* MainStoryboard.storyboard */,
+				81E4338217D32DB400150467 /* FollowedCell.h */,
+				81E4338317D32DB400150467 /* FollowedCell.m */,
+				81E4339417D3688D00150467 /* AccountDetail.h */,
+				81E4339517D3688D00150467 /* AccountDetail.m */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		81E4339117D353FF00150467 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				81E4338D17D3537400150467 /* TrackData.h */,
+				81E4338E17D3537400150467 /* TrackData.m */,
+				81E4338F17D353D700150467 /* Account.h */,
+				81E4339017D353D700150467 /* Account.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E4339217D35C2F00150467 /* TrackData.m in Sources */,
+				81E4339317D35C2F00150467 /* Account.m in Sources */,
 				8117377B17D325A30060F0AC /* main.m in Sources */,
 				8117377F17D325A30060F0AC /* AppDelegate.m in Sources */,
 				8117378B17D325A30060F0AC /* ViewController.m in Sources */,
+				81E4338417D32DB400150467 /* FollowedCell.m in Sources */,
+				81E4338817D32F0200150467 /* AccountsViewController.m in Sources */,
+				81E4339617D3688D00150467 /* AccountDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +352,7 @@
 				8117379017D325A30060F0AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
