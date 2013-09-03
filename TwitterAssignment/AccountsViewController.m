@@ -8,6 +8,7 @@
 
 #import "AccountsViewController.h"
 #import "TrackData.h"
+#import "Account.h"
 
 @interface AccountsViewController ()
 
@@ -89,7 +90,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _followedName.count;
+    NSLog(@"Tracking Results count: %lu", (unsigned long)tracking.results.count);
+    return tracking.results.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -97,10 +99,18 @@
     static NSString *CellIdentifier = @"FollowedTableCell";
     FollowedCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    int row = [indexPath row];
+    // Get the current user ID for the cell
+    // Get the matching name from Twitter
     
-    cell.followedUserCell.text = _followedName[row];
+    Account *getAccount = [[Account alloc] init];
+    NSInteger accountNumber = [[tracking.results objectAtIndex:[indexPath row]] integerValue];
+    
+//    [getAccount getAccountDetails:accountNumber];
+    NSString *currentName = [getAccount getAccountDetails:&accountNumber];
+    
+//    cell.followedUserCell.text = [NSString stringWithFormat:@"%@",[tracking.results objectAtIndex:[indexPath row]]];
+    cell.followedUserCell.text = currentName;
+
     
     return cell;
 }
